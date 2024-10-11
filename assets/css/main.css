@@ -125,6 +125,9 @@
   font-weight: 100;
   font-style: normal;
   font-display: swap; }
+.section-content {
+  max-width: 2560px; }
+
 .my_container {
   background-color: white;
   overflow: hidden; }
@@ -661,7 +664,17 @@
 @media (min-width: 1921px) {
   .parallax {
     background-position: left;
-    background-size: contain; } }
+    background-size: contain; }
+
+  .group_image.full {
+    width: 100%; }
+    .group_image.full img {
+      width: 100%; }
+    .group_image.full img:first-child {
+      width: 100%; }
+
+  .img.full {
+    width: 100%; } }
 @media (max-width: 1600px) {
   .group_img_8 {
     margin-top: -5%; }

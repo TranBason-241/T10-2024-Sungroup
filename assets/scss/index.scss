@@ -1,9 +1,14 @@
 @import "fonts";
 
+.section-content {
+    max-width: 2560px;
+}
+
 .my_container {
     background-color: white;
     overflow: hidden;
 }
+
 .img {
     max-width: 100%;
     margin: 0 auto;
@@ -648,6 +653,22 @@
     .parallax {
         background-position: left;
         background-size: contain;
+    }
+
+    .group_image.full {
+      
+        width: 100%;
+        img {
+          
+            width: 100%;
+        }
+        & img:first-child {
+            
+            width: 100%;
+        }
+    }
+    .img.full{
+        width: 100%;
     }
 }
 @media (max-width: 1600px) {
