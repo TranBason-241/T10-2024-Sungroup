@@ -2,7 +2,6 @@
 
 .my_container {
     background-color: white;
-    overflow: hidden;
 }
 .img {
     max-width: 100%;
@@ -378,8 +377,8 @@ body {
     margin-bottom: 30px;
 }
 .img-6 {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    // margin-top: 40px;
+    // margin-bottom: 30px;
 }
 
 .section-2 {
@@ -637,10 +636,30 @@ body {
         right: 5px;
     }
 }
-
+.parallax {
+    background-image: url(../images/img_6.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    img {
+        opacity: 0;
+    }
+}
+@media (min-width: 1921px) {
+    .parallax {
+        background-position: left;
+        background-size: contain;
+    }
+}
 @media (max-width: 1600px) {
     .group_img_8 {
         margin-top: -5%;
+    }
+    .parallax {
+        background-position: center top;
     }
 }
 @media (max-width: 1440px) {
@@ -658,6 +677,9 @@ body {
     }
     .decor-1 {
         width: 25%;
+    }
+    .parallax {
+        background-size: contain;
     }
 }
 
@@ -819,5 +841,61 @@ body {
     }
     .quote-2 .quotes-content {
         margin-right: 0px;
+    }
+    .img-6 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+    .my_container {
+        overflow: hidden;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 18px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 33px;
+        height: 33px;
+    }
+    .quote-container .img {
+        margin: 0;
+        height: fit-content !important;
+        width: 100%;
+        max-height: fit-content;
+    }
+}
+@media (max-width: 440px) {
+    .text_title {
+        font-size: 18px;
+    }
+    .title-container {
+        padding: 12px 15px 8px;
+        margin-bottom: 30px;
+    }
+    .quote-container .content {
+        font-size: 19px;
+    }
+    .quote-1 .quotes-content {
+        padding-top: 0;
+        .name,
+        .title {
+            font-size: 17px;
+        }
+    }
+    .quote-1 .img {
+        margin-right: 0px;
+    }
+    .slide-1 {
+        margin-top: 30px;
+    }
+    .img-8 {
+        margin-top: -10%;
     }
 }
