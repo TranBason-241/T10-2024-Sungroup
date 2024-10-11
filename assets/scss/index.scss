@@ -652,22 +652,19 @@
 @media (min-width: 1921px) {
     .parallax {
         background-position: left;
-        background-size: contain;
+        // background-size: contain;
     }
 
     .group_image.full {
-      
         width: 100%;
         img {
-          
             width: 100%;
         }
         & img:first-child {
-            
             width: 100%;
         }
     }
-    .img.full{
+    .img.full {
         width: 100%;
     }
 }

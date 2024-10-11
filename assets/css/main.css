@@ -663,8 +663,7 @@
 
 @media (min-width: 1921px) {
   .parallax {
-    background-position: left;
-    background-size: contain; }
+    background-position: left; }
 
   .group_image.full {
     width: 100%; }
